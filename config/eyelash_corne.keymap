@@ -26,29 +26,38 @@
     trigger-period-ms = <16>;
 };
 
-&soft_off { hold-time-ms = <2000>; };
-
 / {
     macros {
-        ae: ae {
+        umlaut_a: umlaut_a {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(Q)>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp LA(U)>, <&kp A>;
         };
-        oe: oe {
+        
+        umlaut_o: umlaut_o {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(P)>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp LA(U)>, <&kp O>;
         };
-        ue: ue {
+        
+        umlaut_u: umlaut_u {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(Y)>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp LA(U)>, <&kp U>;
         };
-        ss: ss {
+        
+        sharp_s: sharp_s {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp RA(S)>;
+            wait-ms = <10>;
+            tap-ms = <10>;
+            bindings = <&kp LA(S)>;
         };
     };
 
@@ -64,32 +73,36 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&ae>, <&kp>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <200>;
+            bindings = <&umlaut_a>, <&kp>;
         };
 
         ht_o: hold_tap_o {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&oe>, <&kp>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <200>;
+            bindings = <&umlaut_o>, <&kp>;
         };
 
         ht_u: hold_tap_u {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&ue>, <&kp>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <200>;
+            bindings = <&umlaut_u>, <&kp>;
         };
 
         ht_s: hold_tap_s {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "tap-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&ss>, <&kp>;
+            tapping-term-ms = <250>;
+            quick-tap-ms = <200>;
+            bindings = <&sharp_s>, <&kp>;
         };
     };
 
@@ -105,15 +118,6 @@
         bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
 
         tap-ms = <100>;
-    };
-
-    combos {
-        compatible = "zmk,combos";
-
-        softoff {
-            bindings = <&soft_off>;
-            key-positions = <1 15 29>;
-        };
     };
 
     keymap {
