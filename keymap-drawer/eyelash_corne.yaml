@@ -9,14 +9,14 @@ layers:
   - T
   - $$mdi:arrow-up-bold$$
   - Y
-  - U
+  - {t: U, h: '&umlaut_u'}
   - I
-  - O
+  - {t: O, h: '&umlaut_o'}
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&td0'
-  - A
-  - S
+  - {t: A, h: '&umlaut_a'}
+  - {t: S, h: '&sharp_s'}
   - D
   - F
   - G
@@ -196,6 +196,3 @@ layers:
   - {type: held alternate}
   - {t: '$$mdi:transfer$$', type: trans}
   - {t: '$$mdi:transfer$$', type: trans}
-combos:
-- p: [1, 15, 29]
-  k: '&soft_off'
