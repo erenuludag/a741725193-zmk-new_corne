@@ -39,8 +39,8 @@ layers:
   - $$mdi:arrow-down-bold$$
   - N
   - M
-  - {t: ',', h: <, s: <}
-  - {t: ., h: '>', s: '>'}
+  - {t: ',', h: ;, s: <}
+  - {t: ., h: ':', s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - LGUI
