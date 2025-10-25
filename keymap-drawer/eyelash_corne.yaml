@@ -1,6 +1,6 @@
 layout: {zmk_keyboard: eyelash_corne}
 layers:
-  QWERTY:
+  QWERTZ:
   - $$mdi:keyboard-tab$$
   - Q
   - W
@@ -8,7 +8,7 @@ layers:
   - R
   - T
   - $$mdi:arrow-up-bold$$
-  - Y
+  - Z
   - {t: U, h: '&umlaut_u'}
   - I
   - {t: O, h: '&umlaut_o'}
@@ -27,10 +27,10 @@ layers:
   - J
   - K
   - L
-  - {t: ;, s: ':'}
-  - {t: '''', s: '"'}
+  - {t: '[', h: '{', s: '{'}
+  - {t: ']', h: '}', s: '}'}
   - $$mdi:apple-keyboard-control$$
-  - Z
+  - Y
   - X
   - C
   - V
@@ -39,8 +39,8 @@ layers:
   - $$mdi:arrow-down-bold$$
   - N
   - M
-  - {t: ',', s: <}
-  - {t: ., s: '>'}
+  - {t: ',', h: <, s: <}
+  - {t: ., h: '>', s: '>'}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - LGUI
