@@ -163,8 +163,8 @@
             display-name = "QWERTZ";
             bindings = <
 &kp TAB    &kp Q       &kp W       &kp E     &kp R  &kp T                               &kp UP                &kp Z        &ht_u 0 U     &kp I      &ht_o 0 O     &kp P     &kp BSPC
-&td0       &ht_a 0 A   &ht_s 0 S   &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J         &kp K      &kp L         &ht_lbkt LBRC LBKT  &ht_rbkt RBRC RBKT
-&kp LCTRL  &kp Y       &kp X       &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M         &ht_comma LT COMMA  &ht_dot GT DOT  &kp FSLH  &kp ESC
+&td0       &ht_a 0 A   &ht_s 0 S   &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J         &kp K      &kp L         &ht_lbkt LBKT LBRC  &ht_rbkt RBKT RBRC
+&kp LCTRL  &kp Y       &kp X       &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N        &kp M         &ht_comma COMMA LT  &ht_dot DOT GT  &kp FSLH  &kp ESC
                                    &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2         &kp RALT
             >;
 
