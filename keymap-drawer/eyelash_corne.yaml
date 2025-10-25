@@ -9,14 +9,14 @@ layers:
   - T
   - $$mdi:arrow-up-bold$$
   - Z
-  - {t: U, h: '&umlaut_u'}
+  - '&ht_u'
   - I
-  - {t: O, h: '&umlaut_o'}
+  - '&ht_o'
   - P
   - {t: '$$mdi:backspace$$', type: backspace}
   - '&td0'
-  - {t: A, h: '&umlaut_a'}
-  - {t: S, h: '&sharp_s'}
+  - '&ht_a'
+  - '&ht_s'
   - D
   - F
   - G
@@ -27,8 +27,8 @@ layers:
   - J
   - K
   - L
-  - {t: '{', h: '['}
-  - {t: '}', h: ']'}
+  - '&ht_lbkt'
+  - '&ht_rbkt'
   - $$mdi:apple-keyboard-control$$
   - Y
   - X
@@ -39,8 +39,8 @@ layers:
   - $$mdi:arrow-down-bold$$
   - N
   - M
-  - {t: <, h: ','}
-  - {t: '>', h: .}
+  - '&ht_comma'
+  - '&ht_dot'
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - LGUI

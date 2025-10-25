@@ -332,8 +332,7 @@ rect.held, rect.combo.held {
 <g transform="translate(728, 35)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">U</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 67%">&amp;umlaut_u</tspan></text>
+<text x="0" y="-4" class="key tap">&amp;ht_u</text>
 </g>
 <g transform="translate(784, 28)" class="key keypos-9">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -343,8 +342,7 @@ rect.held, rect.combo.held {
 <g transform="translate(840, 35)" class="key keypos-10">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">O</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 67%">&amp;umlaut_o</tspan></text>
+<text x="0" y="-4" class="key tap">&amp;ht_o</text>
 </g>
 <g transform="translate(896, 49)" class="key keypos-11">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -364,14 +362,12 @@ rect.held, rect.combo.held {
 <g transform="translate(84, 105)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">A</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 67%">&amp;umlaut_a</tspan></text>
+<text x="0" y="-4" class="key tap">&amp;ht_a</text>
 </g>
 <g transform="translate(140, 91)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">S</text>
-<text x="0" y="24" class="key hold"><tspan style="font-size: 75%">&amp;sharp_s</tspan></text>
+<text x="0" y="-4" class="key tap">&amp;ht_s</text>
 </g>
 <g transform="translate(196, 84)" class="key keypos-16">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -426,14 +422,12 @@ rect.held, rect.combo.held {
 <g transform="translate(896, 105)" class="key keypos-26">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">{</text>
-<text x="0" y="24" class="key hold">[</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 75%">&amp;ht_lbkt</tspan></text>
 </g>
 <g transform="translate(952, 105)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">}</text>
-<text x="0" y="24" class="key hold">]</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 75%">&amp;ht_rbkt</tspan></text>
 </g>
 <g transform="translate(28, 161)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
@@ -488,14 +482,12 @@ rect.held, rect.combo.held {
 <g transform="translate(784, 140)" class="key keypos-38">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">&lt;</text>
-<text x="0" y="24" class="key hold">,</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 67%">&amp;ht_comma</tspan></text>
 </g>
 <g transform="translate(840, 147)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
 <rect rx="4" ry="4" x="-20" y="-24" width="40" height="40" class="key"/>
-<text x="0" y="-4" class="key tap">&gt;</text>
-<text x="0" y="24" class="key hold">.</text>
+<text x="0" y="-4" class="key tap"><tspan style="font-size: 86%">&amp;ht_dot</tspan></text>
 </g>
 <g transform="translate(896, 161)" class="key keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key side"/>
