@@ -71,74 +71,74 @@
 
         ht_a: hold_tap_a {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
             quick-tap-ms = <200>;
-            bindings = <&umlaut_a>, <&kp A>;
+            bindings = <&umlaut_a>, <&kp>;
         };
 
         ht_o: hold_tap_o {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
             quick-tap-ms = <200>;
-            bindings = <&umlaut_o>, <&kp O>;
+            bindings = <&umlaut_o>, <&kp>;
         };
 
         ht_u: hold_tap_u {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
             quick-tap-ms = <200>;
-            bindings = <&umlaut_u>, <&kp U>;
+            bindings = <&umlaut_u>, <&kp>;
         };
 
         ht_s: hold_tap_s {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
             quick-tap-ms = <200>;
-            bindings = <&sharp_s>, <&kp S>;
+            bindings = <&sharp_s>, <&kp>;
         };
 
         ht_lbkt: hold_tap_lbkt {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
             quick-tap-ms = <200>;
-            bindings = <&kp LBRC>, <&kp LBKT>;
+            bindings = <&kp>, <&kp>;
         };
 
         ht_rbkt: hold_tap_rbkt {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
             quick-tap-ms = <200>;
-            bindings = <&kp RBRC>, <&kp RBKT>;
+            bindings = <&kp>, <&kp>;
         };
 
         ht_comma: hold_tap_comma {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
             quick-tap-ms = <200>;
-            bindings = <&kp LT>, <&kp COMMA>;
+            bindings = <&kp>, <&kp>;
         };
 
         ht_dot: hold_tap_dot {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <250>;
             quick-tap-ms = <200>;
-            bindings = <&kp GT>, <&kp DOT>;
+            bindings = <&kp>, <&kp>;
         };
     };
 
@@ -162,10 +162,10 @@
         default_layer {
             display-name = "QWERTZ";
             bindings = <
-&kp TAB    &kp Q    &kp W    &kp E     &kp R  &kp T                               &kp UP                &kp Z     &ht_u      &kp I   &ht_o      &kp P     &kp BSPC
-&td0       &ht_a    &ht_s    &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H     &kp J      &kp K   &kp L      &ht_lbkt  &ht_rbkt
-&kp LCTRL  &kp Y    &kp X    &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N     &kp M      &ht_comma  &ht_dot  &kp FSLH  &kp ESC
-                             &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2   &kp RALT
+&kp TAB    &kp Q      &kp W      &kp E     &kp R  &kp T                               &kp UP                &kp Z          &ht_u 0 U      &kp I      &ht_o 0 O      &kp P     &kp BSPC
+&td0       &ht_a 0 A  &ht_s 0 S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H          &kp J          &kp K      &kp L          &ht_lbkt LBRC LBKT  &ht_rbkt RBRC RBKT
+&kp LCTRL  &kp Y      &kp X      &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N          &kp M          &ht_comma LT COMMA  &ht_dot GT DOT  &kp FSLH  &kp ESC
+                                 &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2   &kp RALT
             >;
 
 
