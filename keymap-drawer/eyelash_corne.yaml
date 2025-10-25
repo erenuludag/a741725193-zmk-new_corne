@@ -27,8 +27,8 @@ layers:
   - J
   - K
   - L
-  - {t: '[', h: '{', s: '{'}
-  - {t: ']', h: '}', s: '}'}
+  - {t: '{', h: '['}
+  - {t: '}', h: ']'}
   - $$mdi:apple-keyboard-control$$
   - Y
   - X
@@ -39,8 +39,8 @@ layers:
   - $$mdi:arrow-down-bold$$
   - N
   - M
-  - {t: ',', h: <, s: <}
-  - {t: ., h: '>', s: '>'}
+  - {t: <, h: ','}
+  - {t: '>', h: .}
   - {t: /, s: '?'}
   - $$mdi:keyboard-esc$$
   - LGUI
