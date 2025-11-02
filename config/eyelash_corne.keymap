@@ -36,15 +36,6 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
-
-        ht_v_plus_star: ht_v_plus_star {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <250>;
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
-        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -76,9 +67,9 @@
         default_layer {
             display-name = "QWERTZ";
             bindings = <
-&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Z  &kp U  &kp I      &kp O    &kp P     &kp BSPC
-&td0       &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  &kp J  &kp K      &kp L    &kp SEMI  &kp SQT
-&kp LCTRL  &kp Y  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp ESC
+&kp TAB    &kp Q  &kp W  &kp E     &kp R  &kp T                               &kp UP                &kp Z  &kp U  &kp I      &kp O    &kp P      &kp LBKT
+&td0       &kp A  &kp S  &kp D     &kp F  &kp G                     &kp LEFT  &kp ENTER  &kp RIGHT  &kp H  &kp J  &kp K      &kp L    &kp SEMI   &kp SQT
+&kp LCTRL  &kp Y  &kp X  &kp C     &kp V  &kp B        &kp SPACE              &kp DOWN              &kp N  &kp M  &kp COMMA  &kp DOT  &kp MINUS  &kp BSPC
                          &kp LGUI  &mo 1  &lt 3 SPACE                                               &lt 3 ENTER  &mo 2  &kp RALT
             >;
 
@@ -86,12 +77,12 @@
         };
 
         lower_layer {
-            display-name = "CODE";
+            display-name = "NUMBER";
             bindings = <
-&trans  &kp N1    &kp N2    &kp N3     &kp N4                      &kp N5                                            &trans                  &kp N6    &kp N7    &kp N8    &kp N9    &kp N0    &kp BSPC
-&trans  &kp EXCL  &kp AMPS  &kp AT     &kp DLLR                    &kp HASH                         &trans           &trans         &trans   &kp LBKT  &kp LBRC  &kp LPAR  &kp RPAR  &kp FSLH  &kp BSLH
-&trans  &kp PRCNT &kp UNDER &kp MINUS  &ht_v_plus_star ASTRK PLUS  &kp EQUAL  &trans                                &trans                  &kp RBKT  &kp RBRC  &kp DQT   &kp SQT   &kp CARET &trans
-                                       &trans                      &trans     &trans                                                         &trans    &trans    &trans
+&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
+&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
+&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
+                                         &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
