@@ -77,12 +77,12 @@
         };
 
         lower_layer {
-            display-name = "NUMBER";
+            display-name = "CODE";
             bindings = <
-&trans  &kp N1           &kp N2          &kp N3        &kp N4        &kp N5                                         &mmv MOVE_UP                     &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
-&trans  &bt BT_CLR_ALL   &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                   &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &kp LEFT         &kp DOWN         &kp UP           &kp RIGHT        &kp HOME  &kp PG_UP
-&trans  &rgb_ug RGB_OFF  &rgb_ug RGB_ON  &trans        &trans        &rgb_ug RGB_EFF  &kp C_MUTE                    &mmv MOVE_DOWN                   &rgb_ug RGB_EFR  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD  &kp END   &kp PG_DN
-                                         &trans        &trans        &trans                                                                          &kp INS          &kp DEL          &trans
+&trans  &kp N1    &kp N2            &kp N3           &kp N4    &kp N5                                      &trans        &kp N6           &kp N7           &kp N8           &kp N9           &kp N0    &kp BSPC
+&trans  &kp EXCL  &kp LS(N6)        &kp RA(L)        &kp DLLR  &kp LS(N3)                   &trans         &trans        &trans           &kp RA(N5)       &kp RA(N8)       &kp LS(N8)       &kp LS(N9)       &kp LS(N7)  &kp RA(LS(N7))
+&trans  &kp PRCNT &kp LS(FSLH)      &kp FSLH         &kp RBKT  &kp LS(N0)  &trans                         &trans        &kp RA(N6)       &kp RA(N9)       &kp LS(N2)       &kp LS(BSLH)     &kp GRAVE &trans
+                                    &trans           &trans    &trans                                                   &trans           &trans           &trans
             >;
 
             sensor-bindings = <&scroll_encoder>;
